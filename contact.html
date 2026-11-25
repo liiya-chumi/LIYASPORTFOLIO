@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact — Liyabona Mahlangeni</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    .w3-sidebar {width: 120px;background: #222;}
+    #main {margin-left: 120px}
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    /* Make footer social icons clickable + light */
+    footer a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+<body class="w3-black">
+
+<!-- Sidebar (hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="images/liya.jpeg" alt="Liyabona Mahlangeni" style="width:100%">
+
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i><p>HOME</p>
+  </a>
+
+  <a href="programs.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i><p>PROGRAMS</p>
+  </a>
+
+  <a href="art.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-paint-brush w3-xxlarge"></i><p>ART</p>
+  </a>
+
+  <a href="animation.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-film w3-xxlarge"></i><p>ANIMATIONS</p>
+  </a>
+
+  <a href="sewing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-scissors w3-xxlarge"></i><p>SEWING</p>
+  </a>
+
+  <!-- CONTACT is the current page - active link -->
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-envelope w3-xxlarge"></i><p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Mobile navbar -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html"     class="w3-bar-item w3-button" style="width:16.66% !important">HOME</a>
+    <a href="programs.html"  class="w3-bar-item w3-button" style="width:16.66% !important">PROG</a>
+    <a href="art.html"       class="w3-bar-item w3-button" style="width:16.66% !important">ART</a>
+    <a href="animation.html" class="w3-bar-item w3-button" style="width:16.66% !important">ANIM</a>
+    <a href="sewing.html"    class="w3-bar-item w3-button" style="width:16.66% !important">SEW</a>
+    <a href="contact.html"   class="w3-bar-item w3-button" style="width:16.66% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">CONTACT LIYABONA</h1>
+  </header>
+
+  <div class="w3-section">
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0610030229</p>
+
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+       Email: <a href="mailto:liyabona.tania@gmail.com" class="w3-text-light-grey">liyabona.tania@gmail.com</a></p>
+
+    <p>
+      <i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+      Art, Sewing &amp; Animations:
+      <a href="https://instagram.com/lilie.mna" target="_blank" rel="noopener" class="w3-text-light-grey"><b>@lilie.mna</b></a>
+    </p>
+  </div>
+
+  <br>
+  <p>Have a question or want to work together? Send me a message:</p>
+
+  <!-- FORM: FormSubmit.co with activation, spam protection and redirect -->
+  <form action="https://formsubmit.co/liyabona.tania@gmail.com" method="POST">
+
+    <!-- FormSubmit hidden settings -->
+    <!-- After first submit, check Gmail to ACTIVATE the form -->
+    <input type="hidden" name="_subject" value="New message from portfolio site">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourdomain.com/contact.html?sent=1">
+    <!-- Honeypot: bots fill this, humans do not see it -->
+    <input type="text" name="_honey" style="display:none">
+
+    <p>
+      <input class="w3-input w3-padding-16" type="text" placeholder="Your Name" required name="Name">
+    </p>
+
+    <p>
+      <input class="w3-input w3-padding-16" type="email" placeholder="Your Email" required name="Email">
+    </p>
+
+    <p>
+      <input class="w3-input w3-padding-16" type="text" placeholder="Subject (e.g. Sewing Query, Web Design)" required name="Subject">
+    </p>
+
+    <p>
+      <textarea class="w3-input w3-padding-16" placeholder="Your Message or Query" required name="Message" style="height:150px;"></textarea>
+    </p>
+
+    <p>
+      <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </p>
+  </form>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://facebook.com/"          target="_blank" rel="noopener" class="w3-hover-opacity"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://instagram.com/lilie.mna" target="_blank" rel="noopener" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a>
+    <a href="https://snapchat.com/"          target="_blank" rel="noopener" class="w3-hover-opacity"><i class="fa fa-snapchat-ghost"></i></a>
+    <a href="https://pinterest.com/"         target="_blank" rel="noopener" class="w3-hover-opacity"><i class="fa fa-pinterest-p"></i></a>
+    <a href="https://twitter.com/"           target="_blank" rel="noopener" class="w3-hover-opacity"><i class="fa fa-twitter"></i></a>
+    <a href="https://linkedin.com/"          target="_blank" rel="noopener" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
+  </footer>
+</div>
+
+<!-- Show a thank you message after redirect back with ?sent=1 -->
+<script>
+  if (new URLSearchParams(location.search).get('sent') === '1') {
+    document.querySelector('form').innerHTML =
+      '<p class="w3-panel w3-green w3-padding-16">Thank you! Your message has been sent.</p>';
+  }
+</script>
+
+<!-- Website by Liyabona - base template from W3Schools -->
+</body>
+</html>
+
